@@ -17,7 +17,7 @@ public interface TimeStampRepository extends CrudRepository<TimeStamp, Long> {
     TimeStamp lastStampIn();
 
     @Query(value = "SELECT CASE " +
-            "WHEN TIME(stamp_in) < '6:00:00' THEN DATE_SUB(DATE(stamp_in), INTERVAL 1 DAY) " +
+            "WHEN TIME(stamp_in) < '06:00:00' THEN DATE_SUB(DATE(stamp_in), INTERVAL 1 DAY) " +
             "ELSE DATE(stamp_in) " +
             "END AS workday, SUM(TIME_TO_SEC(TIMEDIFF(stamp_out, stamp_in))) AS seconds " +
             "FROM time_stamp " +

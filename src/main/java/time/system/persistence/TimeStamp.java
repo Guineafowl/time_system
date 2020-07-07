@@ -26,4 +26,5 @@ public class TimeStamp {
     public TimeStamp(Date stampIn) {
         this.stampIn = stampIn;
     }
+
 }

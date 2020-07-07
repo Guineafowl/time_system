@@ -1,14 +1,15 @@
 server:
-  port: 9000
+  port: 10011
 
 spring:
   jpa:
     database: mysql
     hibernate:
-      ddl-auto: none
+      ddl-auto: update
   datasource:
-    url: jdbc:mysql://localhost:3306/time_system
+    url: jdbc:mysql://127.0.0.1:10010/time_system
     username: root
+    password: oHtCsDAc0wk1VApE0QEo
   jackson:
     default-property-inclusion: non_null
   servlet:
